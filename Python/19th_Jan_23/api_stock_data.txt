@@ -1,0 +1,4 @@
+ os.environ["IEX_API_KEY"] = "sk_5bdb6470e57d4819a152b9fc1c6508ff"
+
+for stock in tech_stocks:
+      stock_data = pdr.DataReader(stock,'iex',start,end, api_key=os.getenv('IEX_API_KEY'))
